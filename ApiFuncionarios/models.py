@@ -6,7 +6,7 @@ class ModelFuncionarios(models.Model):
     nome = models.CharField(max_length=255)
     rg = models.CharField(max_length=255)
     orgaoEmissor = models.CharField(max_length=255)
-    cpf = models.CharField((max))
+    cpf = models.CharField(max_length=255)
     nacionalidade = models.CharField(max_length=255)
     endereco = models.CharField(max_length=255)
     cep = models.CharField(max_length=255)
