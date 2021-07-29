@@ -1,4 +1,4 @@
-from rest_framework import serializer
+from rest_framework import serializers
 from ApiFuncionarios.models import ModelFuncionarios
 
 class FuncionariosSerializer(serializers.ModelSerializer):
