@@ -43,7 +43,7 @@ class FuncionarioGetPutDelete(APIView):
         except ModelFuncionarios.DoesNotExist:
             return Http404
 
-    def  get(self, request, id):
+    def get(self, request, id):
         funcionarios = self.getFuncionarios(id=id)
         funcionariosSerializer = FuncionariosSerializer(funcionarios)
         return Response(funcionariosSerializer.data)
