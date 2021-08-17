@@ -78,7 +78,11 @@ WSGI_APPLICATION = 'setup.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': 'TesteApiFuncionarios',
+        'ENFORCE_SCHEMA':'False',
+        'CLIENT' : {
+            'host': 'mongodb+srv://Rhama:Mg16653651@testeapifuncionarios.ue7e5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+        }
     }
 }
 
