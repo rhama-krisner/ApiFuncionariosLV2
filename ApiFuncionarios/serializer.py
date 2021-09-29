@@ -5,3 +5,4 @@ class FuncionariosSerializer(serializers.ModelSerializer):
     class Meta:
         model = ModelFuncionarios
         fields = '__all__'
+        
